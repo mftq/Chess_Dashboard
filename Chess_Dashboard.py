@@ -79,6 +79,8 @@ plt.ylabel('Median Number of Turns')
 plt.tight_layout()
 st.pyplot(plt)
 
+plt.show()
+
 
 
 
