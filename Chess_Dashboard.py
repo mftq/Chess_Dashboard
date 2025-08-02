@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset
-df = pd.read_csv(r'C:\Users\murha\Downloads\games.csv')  # Adjust path if needed
+df = pd.read_csv('games.csv')  # Adjust path if needed
 
 # Data preparation
 df['rated'] = df['rated'].astype(str)
@@ -70,3 +70,4 @@ plt.tight_layout()
 
 # Show all
 plt.show()
+
