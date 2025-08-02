@@ -24,7 +24,7 @@ plt.title('1. Game Outcome Distribution')
 plt.xlabel('Winner')
 plt.ylabel('Number of Games')
 plt.tight_layout()
-st.pyplot(plt)
+
 
 # 2. Victory Status Distribution
 plt.figure(figsize=(6, 6))
@@ -78,6 +78,7 @@ plt.xlabel('Victory Method')
 plt.ylabel('Median Number of Turns')
 plt.tight_layout()
 st.pyplot(plt)
+
 
 
 
