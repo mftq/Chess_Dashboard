@@ -24,7 +24,6 @@ plt.title('1. Game Outcome Distribution')
 plt.xlabel('Winner')
 plt.ylabel('Number of Games')
 plt.tight_layout()
-st.pyplot(plt)
 
 # 2. Victory Status Distribution
 plt.figure(figsize=(6, 6))
@@ -32,7 +31,7 @@ df['victory_status'].value_counts().plot(kind='pie', autopct='%1.1f%%', startang
 plt.title('2. Victory Status Distribution')
 plt.ylabel('')
 plt.tight_layout()
-st.pyplot(plt)
+
 
 # 3. Distribution of Game Length (Turns)
 plt.figure(figsize=(6, 4))
@@ -41,7 +40,7 @@ plt.title('3. Distribution of Game Length (in Turns)')
 plt.xlabel('Number of Turns')
 plt.ylabel('Game Count')
 plt.tight_layout()
-st.pyplot(plt)
+
 
 # 4. Most Played Openings
 plt.figure(figsize=(8, 5))
@@ -58,7 +57,7 @@ df['rated'].value_counts().plot(kind='pie', autopct='%1.1f%%', startangle=90, co
 plt.title('5. Rated vs Unrated Games')
 plt.ylabel('')
 plt.tight_layout()
-st.pyplot(plt)
+
 
 # 6. Most Played Time Controls
 plt.figure(figsize=(8, 5))
@@ -67,7 +66,7 @@ plt.title('6. Most Played Time Controls')
 plt.xlabel('Number of Games')
 plt.ylabel('Time Control Format')
 plt.tight_layout()
-st.pyplot(plt)
+
 
 # 7. Game Length Vs Victory Method
 plt.figure(figsize=(8, 5))
