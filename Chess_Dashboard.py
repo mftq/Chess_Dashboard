@@ -1,6 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import streamlit as st
+
+# Set the page title
+st.title("Chess Games Dashboard")
 
 # Load dataset
 df = pd.read_csv('games.csv')  # Adjust path if needed
@@ -70,5 +74,6 @@ plt.tight_layout()
 
 # Show all
 st.pyplot(plt)
+
 
 
