@@ -47,8 +47,8 @@ with col3:
     plt.tight_layout()
     st.pyplot(plt)
 
-### --- ROW 2: Charts 4, 5, 6 --- ###
-col4, col5, col6 = st.columns(3)
+### --- ROW 2: Charts 4, 5, 6, 7 --- ###
+col4, col5, col6, col7 = st.columns(4)
 
 with col4:
     plt.figure(figsize=(4.5, 3))
@@ -76,15 +76,14 @@ with col6:
     plt.tight_layout()
     st.pyplot(plt)
 
-### --- ROW 3: Chart 7 full width --- ###
-st.markdown("---")
-st.subheader("7. Game Length Vs Victory Method")
-plt.figure(figsize=(8, 4))
-median_turns = df.groupby('victory_status')['turns'].median().sort_values()
-median_turns.plot(kind='bar', color='steelblue')
-plt.xlabel('Victory Method')
-plt.ylabel('Median Number of Turns')
-plt.tight_layout()
-st.pyplot(plt)
+with col7:
+    plt.figure(figsize=(4.5, 3))
+    median_turns = df.groupby('victory_status')['turns'].median().sort_values()
+    median_turns.plot(kind='bar', color='steelblue')
+    plt.title('7. Game Length Vs Victory Method')
+    plt.xlabel('Victory Method')
+    plt.ylabel('Median Number of Turns')
+    plt.tight_layout()
+    st.pyplot(plt)
 
 plt.show()
